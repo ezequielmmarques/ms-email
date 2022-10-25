@@ -41,3 +41,6 @@ These additional references should also help you:
     "subject": "Segunda Envio - 2ª Edição - Code Dev",
     "text": "Uma arquitetura de microsserviço – uma variante do estilo estrutural SOA – é um padrão de arquitetura que organiza um aplicativo como uma coleção de serviços de baixa granularidade e pouco acoplados, comunicando-se por meio de protocolos leves."
 }`
+
+### Settings Mensageria:
+* [CloudAMQP](https://api.cloudamqp.com/console/1a56d4c0-3ae4-49f2-812d-e2904ce2c585/details)
