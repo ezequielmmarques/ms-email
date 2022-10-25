@@ -1,8 +1,9 @@
-package com.ms.msmail.services;
+package com.ms.mail.services;
 
-import com.ms.msmail.models.EmailModel;
-import com.ms.msmail.models.StatusEmail;
-import com.ms.msmail.repositories.EmailRepository;
+import com.ms.mail.enums.StatusEmail;
+import com.ms.mail.models.EmailModel;
+import com.ms.mail.repositories.EmailRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 
 @Service
+@Slf4j
 public class EmailService {
 
     @Autowired
@@ -34,6 +36,7 @@ public class EmailService {
             emailModel.setStatusEmail(StatusEmail.SENT);
         } catch ( MailException e ) {
             emailModel.setStatusEmail(StatusEmail.ERROR);
+            log.error( e.getMessage() );
         } finally {
             return emailRepository.save(emailModel);
         }

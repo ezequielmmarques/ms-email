@@ -1,8 +1,8 @@
-package com.ms.msmail.controllers;
+package com.ms.mail.controllers;
 
-import com.ms.msmail.dtos.EmailDto;
-import com.ms.msmail.models.EmailModel;
-import com.ms.msmail.services.EmailService;
+import com.ms.mail.dtos.EmailDto;
+import com.ms.mail.models.EmailModel;
+import com.ms.mail.services.EmailService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,7 +25,7 @@ public class EmailController {
         var emailModel = new EmailModel();
         BeanUtils.copyProperties(emailDto, emailModel);
         emailService.sendEmail(emailModel);
-        return new ResponseEntity<>(new EmailModel(), HttpStatus.CREATED);
+        return new ResponseEntity<>(emailModel, HttpStatus.CREATED);
 
     }
 }

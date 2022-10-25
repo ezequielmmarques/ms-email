@@ -1,4 +1,4 @@
-package com.ms.msmail.models;
+package com.ms.mail.enums;
 
 public enum StatusEmail {
 

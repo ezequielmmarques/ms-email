@@ -1,4 +1,4 @@
-package com.ms.msmail;
+package com.ms.mail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,7 @@
-package com.ms.msmail.models;
+package com.ms.mail.models;
 
 
+import com.ms.mail.enums.StatusEmail;
 import lombok.Data;
 
 import javax.persistence.Column;
