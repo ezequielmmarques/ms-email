@@ -44,3 +44,7 @@ These additional references should also help you:
 
 ### Settings Mensageria:
 * [CloudAMQP](https://api.cloudamqp.com/console/1a56d4c0-3ae4-49f2-812d-e2904ce2c585/details)
+
+### Starting Docker Compose (database docker)
+- Execute in the directory "database-docker" the following command:
+  - `sudo docker-compose up -d`

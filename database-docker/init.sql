@@ -1,0 +1,1 @@
+CREATE DATABASE Configurando docker-compose.yaml do banco postgresql;
